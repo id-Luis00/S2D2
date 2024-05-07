@@ -101,12 +101,12 @@ console.log('il nuovo totale della sua spesa è: ', totalShoppingCart - scontoBl
   Alla fine mostra il risultato in console.
 */
 
-let a = Math.floor((Math.random() * 30) + 1);
-let b = Math.floor((Math.random() * 30) + 1);
-let c = Math.floor((Math.random() * 30) + 1);
+let a = 10;
+let b = 4;
+let c = 30;
 let temp;
 
-if (a < b) {
+/* if (a < b) {
   temp = a;
   a = b;
   b = temp;
@@ -124,19 +124,46 @@ if (a < b) {
   }
 
   console.log(a, b, c)
-}
+} */
 
+/* if (a < b) {
+  if (a < c) {
+    if (b < c) {
+      console.log(c, b, a);
+    }
+  }
+}
+ */
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
+let valoreCasuale = 'luis';
+
+if (typeof valoreCasuale === 'number') {
+  console.log('è un numero');
+}
+else {
+  console.log('non è un numero');
+}
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
+
+const numeroFornito = Math.floor((Math.random() * 100) + 1);
+console.log('il numero fornito è: ', numeroFornito);
+
+if ((numeroFornito % 2) == 0) {
+  console.log('Il numero fornito è pari')
+}
+else {
+  console.log('Il numero fornito è dispari')
+}
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -152,6 +179,17 @@ if (a < b) {
     }
 */
 
+let val = Math.floor((Math.random() * 15) + 1);
+
+console.log(' Il valore casuale è: ', val);
+  if (val < 10 && val > 5) {
+      console.log("Meno di 10");
+    } else if (val < 5) {
+      console.log("Meno di 5");
+    } else {
+      console.log("Uguale a 10 o maggiore");
+    }
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 11
@@ -164,11 +202,18 @@ const me = {
   skills: ['javascript', 'html', 'css'],
 }
 
+me.city = 'Toronto';
+
+console.log(me);
+
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
+
+delete me.lastName;
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -176,16 +221,31 @@ const me = {
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
+me.skills.pop();
+
+console.log(me.skills);
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
+const arrayVuoto = [];
+
+arrayVuoto.push(1,2,3,4,5,6,7,8,9,10);
+
+console.log(arrayVuoto);
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
+
+arrayVuoto.pop();
+arrayVuoto.push(100);
+
+console.log(arrayVuoto);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
