@@ -101,39 +101,41 @@ console.log('il nuovo totale della sua spesa è: ', totalShoppingCart - scontoBl
   Alla fine mostra il risultato in console.
 */
 
-let a = 10;
-let b = 4;
-let c = 30;
+let a = Math.floor((Math.random() * 100) + 1);
+let b = Math.floor((Math.random() * 100) + 1);
+let c = Math.floor((Math.random() * 100) + 1);
 let temp;
 
-/* if (a < b) {
-  temp = a;
-  a = b;
-  b = temp;
-  
-  if (a < c) {
-    temp = a;
-    a = c;
-    c = temp;
-    
-    if (b < c) {
-      temp = b;
-      b = c;
-      c = temp;
-    }
-  }
 
-  console.log(a, b, c)
-} */
 
-/* if (a < b) {
+ if (a < b) {
   if (a < c) {
     if (b < c) {
       console.log(c, b, a);
     }
+    else {
+      console.log(b, c, a);
+    }
+  }
+  else {
+    console.log(b, a, c);
+  }
+
+} 
+else {
+  if (a < c) {
+    console.log(c, a, b);
+  }
+  else {
+    if (b < c) {
+      console.log(a, c, b);
+    }
+    else {
+      console.log(a, b, c);
+    }
   }
 }
- */
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 8
